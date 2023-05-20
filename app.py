@@ -11,7 +11,7 @@ p {text-align: center; color: grey;}
 </style>""",unsafe_allow_html=True)
 
 
-st.markdown("<h1>Batch #1191</h1>", unsafe_allow_html=True)
+st.markdown("<h1>Batch #1189</h1>", unsafe_allow_html=True)
 st.markdown("<p>Carina • Jessica • Brandon • Sultan • Yinghui • Ayata • Howard • Ikuto • Anthony</p>", unsafe_allow_html=True)
 
 
