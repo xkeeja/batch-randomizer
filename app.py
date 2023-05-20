@@ -12,14 +12,14 @@ p {text-align: center; color: grey;}
 
 
 st.markdown("<h1>Batch #1191</h1>", unsafe_allow_html=True)
-st.markdown("<p>Neyla • Hippolyte • Justin • Clement • Andrii • Yusuke • Jack • Sarat • Rukun</p>", unsafe_allow_html=True)
+st.markdown("<p>Carina • Jessica • Brandon • Sultan • Yinghui • Ayata • Howard • Ikuto • Anthony</p>", unsafe_allow_html=True)
 
 
 st.markdown("![The Claw](https://media.tenor.com/8dflUTn1LGEAAAAC/better-place-claw-machine.gif)")
 
 
 if 'batch' not in st.session_state:
-    st.session_state['batch'] = ['Neyla', 'Sarat', 'Yusuke', 'Jack', 'Clement', 'Justin', 'Hippolyte', 'Rukun', 'Andrii']
+    st.session_state['batch'] = ['Carina', 'Jessica', 'Brandon', 'Sultan', 'Yinghui', 'Ayata', 'Howard', 'Ikuto', 'Anthony']
 
 
 current = "Up next..."
