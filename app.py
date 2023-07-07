@@ -1,6 +1,9 @@
 import streamlit as st
 import random
 
+batch_info = st.experimental_get_query_params()
+batch_num = batch_info.get('batch', [99])[0]
+students = batch_info.get('students', ['Linetti,Peralta,Diaz,Terry,Amy,Boyle'])[0].split(',')
 
 # inject CSS
 m = st.markdown("""
@@ -11,15 +14,15 @@ p {text-align: center; color: grey;}
 </style>""",unsafe_allow_html=True)
 
 
-st.markdown("<h1>Batch #1191</h1>", unsafe_allow_html=True)
-st.markdown("<p>Neyla • Hippolyte • Justin • Clement • Andrii • Yusuke • Jack • Sarat • Rukun</p>", unsafe_allow_html=True)
+st.markdown(f"<h1>Batch #{batch_num}</h1>", unsafe_allow_html=True)
+st.markdown(f"<p>{' ・ '.join(students)}</p>", unsafe_allow_html=True)
 
 
 st.markdown("![The Claw](https://media.tenor.com/8dflUTn1LGEAAAAC/better-place-claw-machine.gif)")
 
 
 if 'batch' not in st.session_state:
-    st.session_state['batch'] = ['Neyla', 'Sarat', 'Yusuke', 'Jack', 'Clement', 'Justin', 'Hippolyte', 'Rukun', 'Andrii']
+    st.session_state['batch'] = students
 
 
 current = "Up next..."
